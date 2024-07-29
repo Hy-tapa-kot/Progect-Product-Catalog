@@ -1,9 +1,18 @@
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 
-import 'bulma/css/bulma.css';
-import '@fortawesome/fontawesome-free/css/all.css';
-import './index.scss';
-
+import { Provider } from 'react-redux';
+import { HashRouter } from 'react-router-dom';
 import { App } from './App';
+import { store } from './redux/store';
 
-createRoot(document.getElementById('root') as HTMLDivElement).render(<App />);
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <HashRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </HashRouter>,
+  );
+}
