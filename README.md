@@ -1,4 +1,4 @@
-# Layaut Page
+# Product-Catalog
 
 1.  Link to the preview [DEMO LINK](https://hy-tapa-kot.github.io/Progect-Layaut/)
 2.  Link to the mockup [Original Dark](<https://www.figma.com/file/BUusqCIMAWALqfBahnyIiH/Phone-catalog-(V2)-Original-Dark>)
