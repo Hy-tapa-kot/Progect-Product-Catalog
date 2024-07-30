@@ -13,4 +13,4 @@
 
 # A description of the project
 
-The project was written in the JavaScript programming language with additional use of TypeScript. The main JavaScript library was React, the Redux Toolkit library was used to manage the states of JavaScript programs. React-icons and Swiper were used from secondary libraries.
+The project is an almost fully functional phone store website. The project was written in the JavaScript programming language with additional use of TypeScript. The main JavaScript library was React, the Redux Toolkit library was used to manage the states of JavaScript programs. React-icons and Swiper were used from secondary libraries.
