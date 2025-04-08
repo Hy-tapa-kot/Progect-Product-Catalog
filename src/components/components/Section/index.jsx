@@ -1,13 +1,13 @@
-import { useRef } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6';
-import { useSelector } from 'react-redux';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Cart } from '../Cart';
-import styles from './section.module.scss';
-import './swiper/swiper.scss';
+import { useRef } from 'react'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6'
+import { useSelector } from 'react-redux'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Cart } from '../Cart'
+import styles from './section.module.scss'
+import './swiper/swiper.scss'
 
 export const Section = ({ sort, title }) => {
   const products = useSelector(state => state.products.products);
@@ -38,7 +38,7 @@ export const Section = ({ sort, title }) => {
   const sortedProducts = () => {
     switch (sort) {
       case 'new':
-        return products.filter(product => product.year === getCurrentYear);
+        return products.filter(product => product.year > 2023 );
       case 'bigPrice':
         return products.slice().sort((a, b) => b.price - a.price);
       default:

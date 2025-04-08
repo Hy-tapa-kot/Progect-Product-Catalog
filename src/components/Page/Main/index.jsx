@@ -1,14 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Category } from '../../components/Category';
-import { Section } from '../../components/Section';
-import slidesData from './img/slidesData.json';
-import slidesDataMobile from './img/slidesDataMobile.json';
-import styles from './Main.module.scss';
+import { useEffect, useRef, useState } from 'react'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Category } from '../../components/Category'
+import { Section } from '../../components/Section'
+import slidesData from './data/slidesData'
+import slidesDataMobile from './data/slidesDataMobile'
+import styles from './Main.module.scss'
 
 export default function Main() {
   const [currentIndex, setCurrentIndex] = useState(0);
